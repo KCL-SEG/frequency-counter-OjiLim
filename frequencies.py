@@ -1,7 +1,11 @@
 """Frequencies function."""
-"""ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    stringItems = [str(i) for i in items]
+    for items in stringItems:
+        if items in frequencies:
+            frequencies[items] +=1
+        else:
+            frequencies[items] = 1
     return frequencies
